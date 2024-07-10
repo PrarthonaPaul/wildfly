@@ -108,6 +108,8 @@ public abstract class OidcBaseTest {
     public static final String OAUTH2_REQUEST_METHOD_APP = "OAuth2RequestApp";
     public static final String PLAINTEXT_REQUEST_APP = "PlainTextRequestApp";
     public static final String PLAINTEXT_REQUEST_URI_APP = "PlainTextRequestUriApp";
+    public static final String PLAINTEXT_REQUEST_MOCK_APP = "PlainTextRequestMockApp";
+    public static final String PLAINTEXT_REQUEST_URI_MOCK_APP = "PlainTextRequestUriMockApp";
     public static final String PLAINTEXT_ENCRYPTED_REQUEST_APP = "PlainTextEncryptedRequestApp";
     public static final String PLAINTEXT_ENCRYPTED_REQUEST_URI_APP = "PlainTextEncryptedRequestUriApp";
     public static final String RSA_SIGNED_REQUEST_APP = "RsaSignedRequestApp";

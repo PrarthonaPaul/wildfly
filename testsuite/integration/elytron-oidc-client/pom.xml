@@ -59,6 +59,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.jmockit</groupId>
+            <artifactId>jmockit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.wildfly.arquillian</groupId>
             <artifactId>wildfly-arquillian-container-managed</artifactId>
             <scope>test</scope>
@@ -223,6 +228,7 @@
                     <systemPropertyVariables>
                         <jboss.install.dir>${basedir}/target/wildfly</jboss.install.dir>
                     </systemPropertyVariables>
+                    <argLine>-javaagent:${settings.localRepository}/org/jmockit/jmockit/${version.org.jmockit}/jmockit-${version.org.jmockit}.jar ${modular.jdk.args} ${modular.jdk.props} -Djdk.attach.allowAttachSelf=true </argLine>
                 </configuration>
                 <executions>
                     <execution>
